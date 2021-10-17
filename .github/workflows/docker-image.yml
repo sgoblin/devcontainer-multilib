@@ -16,6 +16,6 @@ jobs:
       - uses: pmorelli92/github-container-registry-build-push@2.0.0
         name: Build and Publish latest Docker image
         with:
-          github-push-secret: ${{secrets.GITHUB_TOKEN}}
+          github-push-secret: ${{secrets.PERSONAL_TOKEN}}
           docker-image-name: devcontainer-multilib
           docker-image-tag: latest # optional
